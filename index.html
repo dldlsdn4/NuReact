@@ -14,15 +14,18 @@
   <script>
     const root = document.getElementById("root");
     const h3 = React.createElement(
-      "span",
+      "h3",
       {
         onMouseEnter: () => console.log("mouse enter"),
       },
-      "Hello I'm a span"
+      "Hello I'm a title"
     );
     const btn = React.createElement(
       "button",
-      { onClick: () => console.log("im clicked!") },
+      {
+        onClick: () => console.log("im clicked!"),
+        style: { backgroundColor: "tomato" },
+      },
       "click me!"
     );
     const container = React.createElement("div", null, [h3, btn]);
