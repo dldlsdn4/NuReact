@@ -1,2 +1,0 @@
-# NuReact
-react practice
